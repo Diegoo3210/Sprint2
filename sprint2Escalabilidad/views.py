@@ -6,6 +6,8 @@ from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 def index(request):
     return render(request, 'formulario.html')
 
+def inicio(request):#Primra vista
+    return render(request, 'index.html')
 def uploadFile(request):
     if request.method == "POST":
         # Fetching the form data
@@ -24,3 +26,4 @@ def uploadFile(request):
     return render(request, "formulario.html", context = {
         "files": documents
     })
+    

@@ -17,7 +17,7 @@ from urllib import request
 from django.contrib import admin
 from django.urls import path
 from sprint2Latencia.views import saludo, sugerenciaTransporte, obtenerUNLINK
-from sprint2Escalabilidad.views import index, uploadFile
+from sprint2Escalabilidad.views import index, uploadFile, inicio
 from sprint2Latencia import settings
 from django.conf.urls.static import static
 
@@ -28,10 +28,5 @@ urlpatterns = [
     path('estrella/direccion/<id>', obtenerUNLINK),
     path('test/', index),
     path("uploadFile/", uploadFile),
+    path("", inicio),
 ]
-
-if settings.DEBUG: 
-    urlpatterns += static(
-        settings.MEDIA_URL, 
-        document_root = settings.MEDIA_ROOT
-    )

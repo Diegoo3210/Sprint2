@@ -1,9 +1,13 @@
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 import time, json
 from manejadorEstrella.models import estrella
+from django.shortcuts import render
 
 def saludo(request): #Primera vista
     return HttpResponse("Hola mi gente")
+
+def inicio(request):#Primra vista
+    return render(request, 'index.html')
 
 def sugerenciaTransporte(request): #Vista para la sugerencia de transporte
 
@@ -21,3 +25,5 @@ def obtenerUNLINK(request, id):
     time.sleep(1) ##Se realiza la pregunta direcciones = "response(http://dev.virtualearth.net/REST/v1/Routes/Driving?wp.1=Seattle,WA&wp.2=Harvard-BelmontLandmarkDistrictSeattleWA,&key=Am3rc5_fSLkVOUrt2RNLAWIqdNgx3j2kxwyK-5mUd5gf5g59XJ8MMXUhJbcSZZvZ)"
     direccion = json.load(direccion.json)
     return HttpResponse(direccion)
+
+

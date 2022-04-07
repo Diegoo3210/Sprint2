@@ -1,0 +1,680 @@
+{
+    "authenticationResultCode": "ValidCredentials",
+    "brandLogoUri": "http:\/\/dev.virtualearth.net\/Branding\/logo_powered_by.png",
+    "copyright": "Copyright © 2022 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.",
+    "resourceSets": [
+        {
+            "estimatedTotal": 1,
+            "resources": [
+                {
+                    "__type": "Route:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "bbox": [
+                        47.603229,
+                        -122.33101,
+                        47.62512,
+                        -122.324998
+                    ],
+                    "id": "v70,h1230372082,i0,a0,cen-US,dAAAAAAAAAAA1,y0,s1,m1,o1,t4,wqfsApDbNR0DWqfI9I5VewA2~AMUdodZJAwABAADgAQAAAAAA0~U2VhdHRsZSwgV0E1~~~~~~~~v12,wAAAAAADQR0AUkzfAzJRewA2~AMUdodYxIQIBAADgAR4k_D4C0~SGFydmFyZC1CZWxtb250IExhbmRtYXJrIERpc3RyaWN0LCBXQQ2~~~~~~~~v12,k1",
+                    "distanceUnit": "Kilometer",
+                    "durationUnit": "Second",
+                    "price": -1,
+                    "routeLegs": [
+                        {
+                            "actualEnd": {
+                                "type": "Point",
+                                "coordinates": [
+                                    47.62512,
+                                    -122.324998
+                                ]
+                            },
+                            "actualStart": {
+                                "type": "Point",
+                                "coordinates": [
+                                    47.603229,
+                                    -122.33028
+                                ]
+                            },
+                            "alternateVias": [],
+                            "cost": 0,
+                            "description": "I-5 N, Bellevue Ave E",
+                            "endLocation": {
+                                "bbox": [
+                                    47.621137,
+                                    -122.332638,
+                                    47.628863,
+                                    -122.317356
+                                ],
+                                "name": "Harvard-Belmont Landmark District, WA",
+                                "point": {
+                                    "type": "Point",
+                                    "coordinates": [
+                                        47.625,
+                                        -122.324997
+                                    ]
+                                },
+                                "address": {
+                                    "adminDistrict": "WA",
+                                    "adminDistrict2": "King County",
+                                    "countryRegion": "United States",
+                                    "formattedAddress": "Harvard-Belmont Landmark District, WA",
+                                    "locality": "Seattle"
+                                },
+                                "confidence": "High",
+                                "entityType": "Neighborhood",
+                                "geocodePoints": [
+                                    {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.625,
+                                            -122.324997
+                                        ],
+                                        "calculationMethod": "Rooftop",
+                                        "usageTypes": [
+                                            "Display"
+                                        ]
+                                    }
+                                ],
+                                "matchCodes": [
+                                    "Good"
+                                ]
+                            },
+                            "endTime": "\/Date(1648476568015-0700)\/",
+                            "itineraryItems": [
+                                {
+                                    "compassDirection": "northwest",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 316,
+                                            "endPathIndices": [
+                                                1
+                                            ],
+                                            "locationCodes": [
+                                                "114+08027"
+                                            ],
+                                            "maneuverType": "DepartStart",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "4th Ave"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                0
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "DepartStart",
+                                        "text": "Head northwest on 4th Ave toward Cherry St"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.603229,
+                                            -122.33028
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "towardsRoadName": "Cherry St",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.095,
+                                    "travelDuration": 11,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "northeast",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 67,
+                                            "endPathIndices": [
+                                                3
+                                            ],
+                                            "locationCodes": [
+                                                "114+17343",
+                                                "114P17343",
+                                                "114+17344"
+                                            ],
+                                            "maneuverType": "TurnRight",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "Cherry St"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                1
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "TurnRight",
+                                        "text": "Turn right onto Cherry St"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.603952,
+                                            -122.330956
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.262,
+                                    "travelDuration": 74,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "north",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 324,
+                                            "endPathIndices": [
+                                                8
+                                            ],
+                                            "locationCodes": [
+                                                "114P17373"
+                                            ],
+                                            "maneuverType": "TakeRampLeft",
+                                            "mode": "Driving",
+                                            "roadType": "Ramp",
+                                            "startPathIndices": [
+                                                3
+                                            ]
+                                        },
+                                        {
+                                            "compassDegrees": 339,
+                                            "endPathIndices": [
+                                                13
+                                            ],
+                                            "locationCodes": [
+                                                "114P04195",
+                                                "114+04196",
+                                                "114P04196",
+                                                "114+04197"
+                                            ],
+                                            "maneuverType": "Merge",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "I-5 North"
+                                            ],
+                                            "roadShieldRequestParameters": {
+                                                "bucket": 656001,
+                                                "shields": [
+                                                    {
+                                                        "labels": [
+                                                            "5"
+                                                        ],
+                                                        "roadShieldType": 1
+                                                    }
+                                                ]
+                                            },
+                                            "roadType": "LimitedAccessHighway",
+                                            "startPathIndices": [
+                                                8
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "RampThenHighwayLeft",
+                                        "text": "Take the ramp on the left for I-5 North and head toward Vancouver B.C"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.605188,
+                                            -122.327982
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "signs": [
+                                        "Vancouver B.C",
+                                        "I-5 North"
+                                    ],
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.964,
+                                    "travelDuration": 61,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "northeast",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 42,
+                                            "endPathIndices": [
+                                                17
+                                            ],
+                                            "locationCodes": [
+                                                "114P17377"
+                                            ],
+                                            "maneuverType": "TakeRampRight",
+                                            "mode": "Driving",
+                                            "roadType": "Ramp",
+                                            "startPathIndices": [
+                                                13
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "166",
+                                    "hints": [
+                                        {
+                                            "hintType": "Landmark",
+                                            "text": "Homewood Suites by Hilton Seattle Convention Center Pike Street on the corner"
+                                        }
+                                    ],
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "TakeRampRight",
+                                        "text": "At Exit 166, head on the ramp right and follow signs for Olive Way"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.613264,
+                                            -122.330046
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "signs": [
+                                        "Olive Way"
+                                    ],
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.373,
+                                    "travelDuration": 22,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "east",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 69,
+                                            "endPathIndices": [
+                                                18
+                                            ],
+                                            "locationCodes": [
+                                                "114P10991"
+                                            ],
+                                            "maneuverType": "BearRight",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "E Olive Way"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                17
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "BearRight",
+                                        "text": "Bear right onto E Olive Way"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.616441,
+                                            -122.328482
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.05,
+                                    "travelDuration": 17,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "east",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 68,
+                                            "endPathIndices": [
+                                                20
+                                            ],
+                                            "locationCodes": [
+                                                "114+10992"
+                                            ],
+                                            "maneuverType": "RoadNameChange",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "E Olive Way"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                18
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "RoadNameChange",
+                                        "text": "Road name changes to E Olive Way"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.616662,
+                                            -122.327902
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.099,
+                                    "travelDuration": 18,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "north",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 1,
+                                            "endPathIndices": [
+                                                23
+                                            ],
+                                            "locationCodes": [
+                                                "114+15995",
+                                                "114P15994",
+                                                "114P15995"
+                                            ],
+                                            "maneuverType": "TurnLeft",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "Bellevue Ave"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                20
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "hints": [
+                                        {
+                                            "hintType": "Landmark",
+                                            "text": "City Market on the corner"
+                                        }
+                                    ],
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "TurnLeft",
+                                        "text": "Turn left onto Bellevue Ave"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.617134,
+                                            -122.32679
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.152,
+                                    "travelDuration": 64,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "north",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 1,
+                                            "endPathIndices": [
+                                                26
+                                            ],
+                                            "maneuverType": "RoadNameChange",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "Bellevue Ave E"
+                                            ],
+                                            "roadType": "Arterial",
+                                            "startPathIndices": [
+                                                23
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "RoadNameChange",
+                                        "text": "Road name changes to Bellevue Ave E"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.618498,
+                                            -122.326756
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.739,
+                                    "travelDuration": 114,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "east",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 89,
+                                            "endPathIndices": [
+                                                29
+                                            ],
+                                            "maneuverType": "TurnRight",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "E Roy St"
+                                            ],
+                                            "roadType": "Street",
+                                            "startPathIndices": [
+                                                26
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "hints": [
+                                        {
+                                            "hintType": "Landmark",
+                                            "text": "Roy Vue Apartments on the corner"
+                                        }
+                                    ],
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "TurnRight",
+                                        "text": "Turn right onto E Roy St"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.625114,
+                                            -122.326616
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Unknown",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0.12,
+                                    "travelDuration": 36,
+                                    "travelMode": "Driving"
+                                },
+                                {
+                                    "compassDirection": "east",
+                                    "details": [
+                                        {
+                                            "compassDegrees": 89,
+                                            "endPathIndices": [
+                                                29
+                                            ],
+                                            "maneuverType": "ArriveFinish",
+                                            "mode": "Driving",
+                                            "names": [
+                                                "E Roy St"
+                                            ],
+                                            "roadType": "Street",
+                                            "startPathIndices": [
+                                                29
+                                            ]
+                                        }
+                                    ],
+                                    "exit": "",
+                                    "hints": [
+                                        {
+                                            "hintType": "PreviousIntersection",
+                                            "text": "The last intersection before your destination is Summit Ave E"
+                                        },
+                                        {
+                                            "hintType": "NextIntersection",
+                                            "text": "If you reach Belmont Ave E, you've gone too far"
+                                        }
+                                    ],
+                                    "iconType": "Auto",
+                                    "instruction": {
+                                        "formattedText": null,
+                                        "maneuverType": "ArriveFinish",
+                                        "text": "Arrive at Harvard-Belmont Landmark District, WA on the right"
+                                    },
+                                    "isRealTimeTransit": false,
+                                    "maneuverPoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.62512,
+                                            -122.324998
+                                        ]
+                                    },
+                                    "realTimeTransitDelay": 0,
+                                    "sideOfStreet": "Right",
+                                    "tollZone": "",
+                                    "transitTerminus": "",
+                                    "travelDistance": 0,
+                                    "travelDuration": 0,
+                                    "travelMode": "Driving"
+                                }
+                            ],
+                            "routeRegion": "WWMX",
+                            "routeSubLegs": [
+                                {
+                                    "endWaypoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.62512,
+                                            -122.324998
+                                        ],
+                                        "description": "Harvard-Belmont Landmark District, WA",
+                                        "isVia": false,
+                                        "locationIdentifier": "0|197|29|161|214|49|33|2|1|0|0|224|1|30|36|252|62|2|47.62512,-122.324998",
+                                        "routePathIndex": 29
+                                    },
+                                    "startWaypoint": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.603229,
+                                            -122.33028
+                                        ],
+                                        "description": "Seattle, WA",
+                                        "isVia": false,
+                                        "locationIdentifier": "0|197|29|161|214|73|3|0|1|0|0|224|1|0|0|0|0|0|47.603229,-122.33028",
+                                        "routePathIndex": 0
+                                    },
+                                    "travelDistance": 2.854,
+                                    "travelDuration": 421
+                                }
+                            ],
+                            "startLocation": {
+                                "bbox": [
+                                    47.467556,
+                                    -122.468719,
+                                    47.7384,
+                                    -122.216721
+                                ],
+                                "name": "Seattle, WA",
+                                "point": {
+                                    "type": "Point",
+                                    "coordinates": [
+                                        47.60323,
+                                        -122.330276
+                                    ]
+                                },
+                                "address": {
+                                    "adminDistrict": "WA",
+                                    "adminDistrict2": "King County",
+                                    "countryRegion": "United States",
+                                    "formattedAddress": "Seattle, WA",
+                                    "locality": "Seattle"
+                                },
+                                "confidence": "High",
+                                "entityType": "PopulatedPlace",
+                                "geocodePoints": [
+                                    {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            47.60323,
+                                            -122.330276
+                                        ],
+                                        "calculationMethod": "Rooftop",
+                                        "usageTypes": [
+                                            "Display"
+                                        ]
+                                    }
+                                ],
+                                "matchCodes": [
+                                    "Good"
+                                ]
+                            },
+                            "startTime": "\/Date(1648476092015-0700)\/",
+                            "travelDistance": 2.854,
+                            "travelDuration": 421,
+                            "travelMode": "Driving"
+                        }
+                    ],
+                    "trafficCongestion": "Mild",
+                    "trafficDataUsed": "None",
+                    "travelDistance": 2.854,
+                    "travelDuration": 421,
+                    "travelDurationTraffic": 476,
+                    "travelMode": "Driving"
+                }
+            ]
+        }
+    ],
+    "statusCode": 200,
+    "statusDescription": "OK",
+    "traceId": "6ead21339cf246b3b9306ae891505ba4|BN00005039|0.0.0.0|BN0000185E, Leg0-BN00003764|Ref A: 96F2E82AEC5C4D7C99E6A85B94A35188 Ref B: BN3EDGE1016 Ref C: 2022-03-28T14:01:31Z|Ref A: 1A5E4070B1534D14B034A0D9CF56CE1D Ref B: BN3EDGE0818 Ref C: 2022-03-28T14:01:31Z"
+}

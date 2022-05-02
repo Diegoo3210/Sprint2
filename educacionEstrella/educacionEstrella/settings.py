@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'manejadorUsuario.apps.ManejadorusuarioConfig',
     ##crispy forms
     'crispy_forms',
+    ##Captcha
+    'captcha'
 ]
 
 MIDDLEWARE = [
@@ -138,6 +140,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'educacionEstrellaFake@gmail.com'
+EMAIL_HOST_USER = 'educacionestrellafake'
 EMAIL_HOST_PASSWORD = 'eduEstrellaFake123'
 
+RECAPTCHA_PUBLIC_KEY = '6LdJmrofAAAAAHjqa8oIdLT1WHYlNnyqjPHyXj_U'
+RECAPTCHA_PRIVATE_KEY ='6LdJmrofAAAAAILlvf4b7aBbVmWJ9xBydeCqhrVy'

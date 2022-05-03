@@ -1,9 +1,12 @@
+import imp
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
-from .forms import UserRegisterForm
+##from .forms import UserRegisterForm
+from .models import usuarioRegistrado
+from .forms import usuarioRegistrado as usuarioRegistradoForm
 from django.core.mail import send_mail  
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
@@ -16,10 +19,10 @@ def index(request):
 ########### register here #####################################
 def register(request):
     if request.method == 'POST':
-        form = UserRegisterForm(request.POST, request.FILES)
+        form = usuarioRegistradoForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
+            username = form.cleaned_data.get('name')
             email = form.cleaned_data.get('email')
             ######################### mail system ####################################
             htmly = get_template('Email.html')
@@ -33,7 +36,7 @@ def register(request):
             messages.success(request, f'Your account has been created ! You are now able to log in')
             return redirect('login')
     else:
-        form = UserRegisterForm()
+        form = usuarioRegistradoForm()
     return render(request, 'Register.html', {'form': form, 'title':'reqister here'})
   
 ################ login forms###################################################

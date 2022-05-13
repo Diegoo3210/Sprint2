@@ -47,7 +47,7 @@ def Login(request):
         usuario = authenticate(request, username = username, password = password)
         if usuario is not None:
             form = login(request, usuario)
-            messages.success(request, f' wecome {username} !!')
+            messages.success(request, f' welcome {username} !!')
             return redirect('index')
         else:
             messages.info(request, f'account done not exit plz sign in')

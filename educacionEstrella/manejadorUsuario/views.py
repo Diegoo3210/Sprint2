@@ -1,9 +1,9 @@
-import re
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
+from .models import Profile
 from .forms import UserRegisterForm
 from django.core.mail import send_mail  
 from django.core.mail import EmailMultiAlternatives
@@ -15,6 +15,8 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from django.contrib.auth.views import PasswordResetView
 from django.contrib.messages.views import SuccessMessageMixin
+
+PRIVATE_IPS_PREFIX = ('10.', '172.', '192.', )
 
 
 @login_required
@@ -34,6 +36,18 @@ def passwordChange(request):
     msg.send()
 
     return render(request, 'index')
+
+def get_client_ip(request):
+    remote_address = request.META.get('HTTP_X_FORWARDED_FOR') or request.META.get('REMOTE_ADDR')
+    ip = remote_address
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        proxies = x_forwarded_for.split(',')
+        while (len(proxies) > 0 and proxies[0].startswith(PRIVATE_IPS_PREFIX)):
+            proxies.pop(0)
+            if len(proxies) > 0:
+                ip = proxies[0]
+        return ip
   
 #################### index #######################################
 def index(request):
@@ -44,9 +58,9 @@ def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
             username = form.cleaned_data.get('username')
             email = form.cleaned_data.get('email')
+            form.save()
             ######################### mail system ####################################
             htmly = get_template('Email.html')
             d = { 'username': username }
